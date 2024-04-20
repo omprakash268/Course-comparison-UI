@@ -1,15 +1,11 @@
-import './App.css'
+import "./App.css";
 
 function App() {
-  
   return (
     <>
-      <div>
-        Course Comparision
-      </div>
-      
+      <div className="bg-slate-300 h-screen">Course Comparision</div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
