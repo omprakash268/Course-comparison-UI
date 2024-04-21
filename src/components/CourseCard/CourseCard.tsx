@@ -8,7 +8,7 @@ import { ICardDataProps } from "../../utils/course.interface";
 
 export const CourseCard = ({ cardData }: ICardDataProps) => {
   return (
-    <div className="w-[40rem] min-h-[15rem] rounded-lg bg-slate-200 shadow-lg p-4 border-1 cursor-pointer m-2">
+    <div className="w-[40rem] min-h-[15rem] rounded-lg bg-slate-100 shadow-lg p-4 border-1 cursor-pointer m-2 flex flex-col justify-between">
       <div className="min-h-[4rem] w-full flex justify-start items-center">
         {/* logo */}
         <div className="min-h-[4rem] w-[4rem] bg-white border-gray-400 border flex justify-center items-center">
@@ -33,8 +33,8 @@ export const CourseCard = ({ cardData }: ICardDataProps) => {
       </div>
 
       {/* course category */}
-      <div className="w-full flex flex-wrap">
-        <div className="w-[70%] flex flex-col">
+      <div className="w-full min-h-[8rem] flex flex-wrap">
+        <div className="md:w-[70%] flex flex-col justify-between">
           <div className="flex mt-2 flex-wrap">
             {cardData.categories.map((cat: string) => {
               return <CategoryChip categroy={cat} />;
@@ -44,7 +44,7 @@ export const CourseCard = ({ cardData }: ICardDataProps) => {
             <CourseStatusChip type={cardData.type} />
           </div>
         </div>
-        <div className="w-[30%] mt-2 flex flex-wrap flex-col justify-center items-center">
+        <div className="md:w-[30%] mt-2 flex flex-wrap flex-col justify-end items-center">
           <button className="w-[10rem] h-[2.2rem] rounded-3xl text-sm flex items-center justify-between px-4 border-gray-400 border hover:bg-blue-400">
             <FiPlusCircle /> <span> Add to compare</span>
           </button>

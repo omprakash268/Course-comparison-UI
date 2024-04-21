@@ -16,5 +16,5 @@ export interface ICourseDetails {
   type:string,
   courseName:string,
   platformAvailable:string,
-  provider:string
+  provider:string,
 }
