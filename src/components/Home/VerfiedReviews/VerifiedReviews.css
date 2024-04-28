@@ -1,0 +1,10 @@
+.slick-prev:before, .slick-next:before{
+    font-size: 40px !important;
+    line-height: 0;
+    color: blue !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
