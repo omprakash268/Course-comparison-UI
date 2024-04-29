@@ -3,6 +3,8 @@ import webSearch from "../../assets/images/content_structure.svg";
 import { IoSearch } from "react-icons/io5";
 import { VerifiedReviews } from "./VerfiedReviews/VerifiedReviews";
 import { PopularCourses } from "./PopularCourses/PopularCourses";
+import { TrendingCourse } from "./TrendingCourse/TrendingCourse";
+import { Testimonials } from "./Testimonials/Testimonials";
 
 export const Home = () => {
   return (
@@ -32,13 +34,28 @@ export const Home = () => {
       </div>
 
       {/* verified reviews */}
-      <div className="w-full flex items-center justify-center">
+      <div className="w-full flex items-center justify-center mt-8">
         <VerifiedReviews />
       </div>
 
       {/* Popular courses */}
-      <div className="w-full flex">
+      <div className="w-full flex mt-8">
         <PopularCourses />
+      </div>
+
+      {/* Discover trending courses */}
+      <div className="w-full flex mt-8">
+        <TrendingCourse />
+      </div>
+
+      {/* Recently added courses */}
+      <div className="w-full flex mt-8">
+        <PopularCourses />
+      </div>
+
+      {/* Recently added courses */}
+      <div className="w-full flex mt-8">
+        <Testimonials />
       </div>
     </div>
   );

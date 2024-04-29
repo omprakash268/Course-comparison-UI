@@ -83,7 +83,7 @@ export const VerifiedReviews = () => {
   return (
     <>
       <div className="w-full">
-        <div className="py-8 px-28 w-full flex flex-col flex-wrap items-center">
+        <div className="w-full flex flex-col flex-wrap items-center">
           <p className="text-3xl font-medium mb-2">
             Compare courses with verified reviews
           </p>

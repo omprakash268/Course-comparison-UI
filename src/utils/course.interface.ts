@@ -35,3 +35,16 @@ export interface IPopularCourseDetails {
   id: number;
   courseType: string;
 }
+
+
+// Testimonial
+export interface ITestimonialDetails{
+  id:number;
+  review:string;
+  userName:string;
+  course:string;
+}
+
+export interface ITestimonialCardProp{
+  testimonialInfo:ITestimonialDetails
+}

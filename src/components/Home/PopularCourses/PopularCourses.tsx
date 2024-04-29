@@ -2,8 +2,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IPopularCourseDetails } from "../../../utils/course.interface";
+import { PopularCourseCard } from "./PopularCourseCard/PopularCourseCard";
 
-const PopularChip = ({popularInfo}:{popularInfo:IPopularCourseDetails}) => {
+const PopularChip = ({
+  popularInfo,
+}: {
+  popularInfo: IPopularCourseDetails;
+}) => {
   return (
     <div
       key={popularInfo.id}
@@ -93,13 +98,18 @@ export const PopularCourses = () => {
   ];
   return (
     <div className="w-full">
-      <p className="text-2xl font-medium">Popular online courses</p>
+      <p className="text-2xl font-medium mb-4">Popular online courses</p>
       <div className="slider-container">
         <Slider {...settings}>
           {popularCourses.map((info: IPopularCourseDetails) => {
             return <PopularChip popularInfo={info} />;
           })}
         </Slider>
+      </div>
+      <div className="flex w-full flex-wrap">
+        <PopularCourseCard />
+        <PopularCourseCard />
+        <PopularCourseCard />
       </div>
     </div>
   );
