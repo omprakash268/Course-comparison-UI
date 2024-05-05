@@ -8,7 +8,7 @@ import { Testimonials } from "./Testimonials/Testimonials";
 
 export const Home = () => {
   return (
-    <div className="min-h-[40rem] w-full px-28  py-8 bg-slate-100">
+    <div className="min-h-[40rem] w-full px-28  py-8">
       {/* Hero section */}
       <div className="w-full flex flex-wrap">
         <div className="md:w-[50%] w-full p-4 flex flex-col justify-center items-start">
