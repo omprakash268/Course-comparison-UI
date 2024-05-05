@@ -13,7 +13,7 @@ export const TestimonialCard = ({ testimonialInfo }: ITestimonialCardProp) => {
       </div>
       <div className="w-full my-4 flex flex-col items-center justify-center">
         <p className="text-center text-sm">{testimonialInfo.course}</p>
-        <FaQuoteLeft className="text-gray-300 text-2xl" />
+        <FaQuoteLeft className="text-blue-200 text-2xl" />
       </div>
     </div>
   );
