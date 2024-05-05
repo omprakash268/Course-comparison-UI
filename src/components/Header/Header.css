@@ -1,0 +1,32 @@
+.menu-navbar {
+  box-shadow: 0 2px 6px 0 rgba(0, 106, 194, 0.2);
+  background-color: white;
+}
+.menu-list-contianer {
+  display: none;
+  background-color: #fff;
+  max-width: 75vw;
+  max-height: 530px;
+  -webkit-box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.2);
+  z-index: 9;
+}
+
+.menu-technology:hover > .menu-list-contianer {
+  display: block !important;
+}
+.menu-datascience:hover > .menu-list-contianer {
+  display: block !important;
+}
+.menu-management:hover > .menu-list-contianer {
+  display: block !important;
+}
+.menu-degree:hover > .menu-list-contianer {
+  display: block !important;
+}
+.menu-more:hover > .menu-list-contianer {
+  display: block !important;
+}
+.menu-bog:hover > .menu-list-contianer {
+  display: block !important;
+}

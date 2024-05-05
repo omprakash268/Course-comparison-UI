@@ -5,9 +5,9 @@ import { Footer, Header } from "./components";
 function App() {
   return (
     <>
-      <div className="bg-slate-200 min-h-screen">
+      <div className="bg-slate-100 min-h-screen">
         <Header />
-          <Outlet />
+        <Outlet />
         <Footer />
       </div>
     </>
