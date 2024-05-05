@@ -1,0 +1,15 @@
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px !important;
+  line-height: 0;
+  color: rgb(212, 212, 212) !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-card:hover {
+  box-shadow: 0 3px 8px 0 rgba(0, 106, 194, 0.2);
+}
